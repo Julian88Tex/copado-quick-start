@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sf_devops__All</fullName>
+    <columns>NAME</columns>
+    <columns>sf_devops__Test_Provider_Engine__c</columns>
+    <columns>sf_devops__Severity__c</columns>
+    <columns>sf_devops__Status__c</columns>
+    <columns>sf_devops__Type__c</columns>
+    <columns>sf_devops__Subtype__c</columns>
+    <columns>sf_devops__Programming_Language__c</columns>
+    <columns>sf_devops__Essential__c</columns>
+    <columns>sf_devops__Project__c</columns>
+    <columns>sf_devops__Environment__c</columns>
+    <columns>sf_devops__Test_Provider__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sf_devops__Icon_Url__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Url of the Test Provider icon. This url will download the icon image of the test provider</description>
+    <label>Icon_Url</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Url</type>
+</CustomField>

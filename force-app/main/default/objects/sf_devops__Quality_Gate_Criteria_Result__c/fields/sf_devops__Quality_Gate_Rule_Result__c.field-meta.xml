@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sf_devops__Quality_Gate_Rule_Result__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Quality Gate Rule Result</label>
+    <referenceTo>sf_devops__Quality_Gate_Rule_Result__c</referenceTo>
+    <relationshipLabel>Quality Gate Criteria Results</relationshipLabel>
+    <relationshipName>Quality_Gate_Criteria_Results</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

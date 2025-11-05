@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assignment_SetFeedback</name>
+        <label>Set Feedback Default</label>
+        <locationX>350</locationX>
+        <locationY>100</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Feedback__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Thank you for creating your account!</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Default the Feedback field to a specific value whenever a new Account is created.</description>
+    <interviewLabel>Default Account Feedback {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Default Account Feedback</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>100</locationX>
+        <locationY>100</locationY>
+        <connector>
+            <targetReference>Assignment_SetFeedback</targetReference>
+        </connector>
+        <object>Account</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

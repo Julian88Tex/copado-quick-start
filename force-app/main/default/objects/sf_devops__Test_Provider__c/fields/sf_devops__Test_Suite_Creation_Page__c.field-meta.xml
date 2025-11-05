@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sf_devops__Test_Suite_Creation_Page__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Stores the name of the lightning tab which has the test suite creation experience for this test provider</description>
+    <externalId>false</externalId>
+    <label>Test Suite Creation Page</label>
+    <length>100</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

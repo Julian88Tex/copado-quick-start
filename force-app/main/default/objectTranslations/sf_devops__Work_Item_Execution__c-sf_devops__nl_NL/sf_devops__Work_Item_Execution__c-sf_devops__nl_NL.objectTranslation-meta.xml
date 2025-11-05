@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Uitvoering van werkitem</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Uitvoeringen van werkitems</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Naam uitvoering van werkitem</nameFieldLabel>
+</CustomObjectTranslation>

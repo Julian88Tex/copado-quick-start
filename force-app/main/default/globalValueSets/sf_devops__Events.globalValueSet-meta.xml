@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Promote</fullName>
+        <default>false</default>
+        <label>Promote</label>
+    </customValue>
+    <customValue>
+        <fullName>Review</fullName>
+        <default>false</default>
+        <label>Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Commit</fullName>
+        <default>false</default>
+        <label>Commit</label>
+    </customValue>
+    <customValue>
+        <fullName>Manual Run</fullName>
+        <default>false</default>
+        <label>Manual Run</label>
+    </customValue>
+    <masterLabel>Events</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

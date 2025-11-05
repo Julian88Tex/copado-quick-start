@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>sf_devops__Test_Suite_Execution_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>sf_devops__Test_Suite_Execution__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>sf_devops__Test_Suite_Execution_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>sf_devops__Test_Suite_Execution__c</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>sf_devops__devopstesting3color</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>DevOps Testing</label>
+    <navType>Standard</navType>
+    <tabs>sf_devops__Test_Provider__c</tabs>
+    <tabs>sf_devops__Test_Suite__c</tabs>
+    <tabs>sf_devops__Test__c</tabs>
+    <tabs>sf_devops__Stage_Assignment__c</tabs>
+    <tabs>sf_devops__Test_Suite_Group_Execution__c</tabs>
+    <tabs>sf_devops__Test_Suite_Execution__c</tabs>
+    <tabs>sf_devops__Test_Execution__c</tabs>
+    <tabs>sf_devops__Quality_Gate_Rule__c</tabs>
+    <tabs>sf_devops__Test_Provider_Sync_History__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>sf_devops__DevOps_Quality_UtilityBar1</utilityBar>
+</CustomApplication>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sf_devops__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Test Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Linting/Scanning</fullName>
+                <default>false</default>
+                <label>Linting/Scanning</label>
+            </value>
+            <value>
+                <fullName>Unit Test</fullName>
+                <default>false</default>
+                <label>Unit Test</label>
+            </value>
+            <value>
+                <fullName>Integration Test</fullName>
+                <default>false</default>
+                <label>Integration Test</label>
+            </value>
+            <value>
+                <fullName>End-to-End Test</fullName>
+                <default>false</default>
+                <label>End-to-End Test</label>
+            </value>
+            <value>
+                <fullName>Profiling</fullName>
+                <default>false</default>
+                <label>Profiling</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

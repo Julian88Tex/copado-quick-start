@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sf_devops__PreventFieldEditAfterCreation</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISNEW()) &amp;&amp;
+(ISCHANGED( sf_devops__Pipeline_Stage__c ) ||
+ ISCHANGED( sf_devops__Test_Suite__c ) ||
+ ISCHANGED( sf_devops__Project__c ) ||
+ ISCHANGED( sf_devops__Event__c ))</errorConditionFormula>
+    <errorMessage>Field not editable</errorMessage>
+</ValidationRule>

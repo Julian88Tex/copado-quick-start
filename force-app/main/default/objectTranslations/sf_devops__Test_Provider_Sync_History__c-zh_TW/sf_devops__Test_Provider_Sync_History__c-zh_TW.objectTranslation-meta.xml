@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 測試提供者同步化歷程記錄 --></value>
+    </caseValues>
+    <nameFieldLabel><!-- Sync Record --></nameFieldLabel>
+</CustomObjectTranslation>

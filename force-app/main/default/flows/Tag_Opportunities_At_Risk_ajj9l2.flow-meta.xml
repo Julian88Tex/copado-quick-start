@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assignment_SetNextStepAtRisk</name>
+        <label>SetNextStepAtRisk</label>
+        <locationX>550</locationX>
+        <locationY>100</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.NextStep</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>At Risk</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Tags opportunities as &apos;At Risk&apos; when CloseDate is within 10 days and Probability is below 50%.</description>
+    <formulas>
+        <name>FR_EntryCriteria</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(CloseDate &lt;= AddDays($Flow.CurrentDate, 10), Probability &lt; 0.5, NextStep &lt;&gt; &apos;At Risk&apos;)</expression>
+    </formulas>
+    <formulas>
+        <name>FR_TodayPlus10Days</name>
+        <dataType>Date</dataType>
+        <expression>AddDays($Flow.CurrentDate, 10)</expression>
+    </formulas>
+    <interviewLabel>Tag Opportunity At Risk {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Tag Opportunity At Risk</label>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>100</locationX>
+        <locationY>100</locationY>
+        <connector>
+            <targetReference>Assignment_SetNextStepAtRisk</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>null__NotFound</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>InvalidDraft</status>
+</Flow>

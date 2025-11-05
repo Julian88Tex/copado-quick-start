@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sf_devops__Check_For_Valid_Definition</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT(
+  REGEX( sf_devops__Definition__c , &quot;^(?:\\d+|\\(|\\)|\\s+|\\b(?i)AND\\b|\\b(?i)OR\\b)*$&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>sf_devops__Definition__c</errorDisplayField>
+    <errorMessage>Invalid expression</errorMessage>
+</ValidationRule>

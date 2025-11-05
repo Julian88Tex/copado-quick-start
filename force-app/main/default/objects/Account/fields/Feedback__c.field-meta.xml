@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Feedback__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Stores customer or internal feedback for the account.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter any feedback related to this account.</inlineHelpText>
+    <label>Feedback</label>
+    <length>255</length>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

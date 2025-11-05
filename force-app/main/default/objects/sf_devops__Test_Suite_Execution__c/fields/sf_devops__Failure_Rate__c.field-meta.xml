@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sf_devops__Failure_Rate__c</fullName>
+    <deprecated>false</deprecated>
+    <formula>IF( sf_devops__Success_Count__c + sf_devops__Failure_Count__c = 0, null, sf_devops__Failure_Count__c/(sf_devops__Success_Count__c + sf_devops__Failure_Count__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Fail Rate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

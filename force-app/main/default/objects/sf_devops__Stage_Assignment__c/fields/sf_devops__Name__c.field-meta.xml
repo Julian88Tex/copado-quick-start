@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sf_devops__Name__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>sf_devops__Project__r.Name &amp;
+IF(
+    ISBLANK(sf_devops__Pipeline_Stage__c),
+    IF(
+        NOT(ISPICKVAL(sf_devops__Event__c, &apos;Review&apos;)),
+        &apos; - To be deleted&apos;,
+        &apos; - 1. Work Item : Review&apos;
+    ),
+    &apos; - &apos; &amp; TEXT(sf_devops__Stage_Id__c) &amp; &apos;. &apos; &amp; sf_devops__Pipeline_Stage__r.Name
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Pipeline Stage</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

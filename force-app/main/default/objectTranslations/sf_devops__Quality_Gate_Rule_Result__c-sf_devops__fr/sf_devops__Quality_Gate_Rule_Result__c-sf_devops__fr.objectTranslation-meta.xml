@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Résultat des règles du mur qualité</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Résultats des règles du mur qualité</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom du résultat des règles du mur qualit</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sf_devops__CannotEditFields</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    NOT(ISPICKVAL(sf_devops__Metric__c, &quot;ALL&quot;)),
+    OR(
+       NOT(ISPICKVAL(sf_devops__Result_Type__c, &quot;Passed&quot;)),
+       NOT(ISPICKVAL(sf_devops__Operator__c, &quot;Equals&quot;)),
+       sf_devops__Threshold__c &lt;&gt; 100
+      )
+)</errorConditionFormula>
+    <errorMessage>When Metric is set to Severity/Essential Tests, Result Type must be Passed, Operator must be Equals, Threshold must be 100</errorMessage>
+</ValidationRule>
